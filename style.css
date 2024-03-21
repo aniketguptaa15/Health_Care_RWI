@@ -18,6 +18,17 @@ body{
     color: white;
     margin-top: 0;
 }
+#su{
+    margin-left: 10%;
+
+}
+#ad{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#ca{
+    margin-right: 10%;
+}
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -41,7 +52,7 @@ body{
 .search-box{
     margin-top: 20px;
     height: 40px;
-    width: auto;
+    width: 25%;
     background-color: #AFAEEE;
     display: flex;
     float: inline-end;
@@ -145,3 +156,391 @@ footer{
     border-radius: 10vh;
     padding: 10px;
 }
+
+
+
+
+
+/* shiv css */
+.content2{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    border-radius: 2vh;
+}
+    .content2 img {
+        height: 450px;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+/* .bg{
+    background-image: url('/images/bg.jpg');
+} */
+.b1{
+    border-radius: 10px;
+    border: 2px solid black;
+    height:100px;
+    width: 200px;
+    text-align:center;
+    margin: 40px;
+    margin-left: 130px;
+    margin-right: 100px;
+    padding-bottom: 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.t3{
+    margin-top: 0px;
+}
+.t4{
+    margin-top: 0px;
+}
+
+.b1 .button{
+    background-color: #5F5DE4;
+    color: aliceblue;
+    width: 60%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*booking form*/
+
+.section{
+    position: relative;
+}
+
+.section-center{
+    position:absolute;
+    margin-top: -40%;
+    left: 0;
+    right: 0;
+}
+
+.booking-form{
+    position:relative;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    background-color: #4247b4;
+    opacity: 0.9;
+    padding: 40px;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 20;
+}
+
+.booking-form::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.booking-form .form-header{
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.booking-form .form-header h1{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 35px;
+    color: #fff;
+    margin: 0px;
+}
+
+.elem-group{
+    margin: 15px 0;
+}
+.elem-group.inlined{
+    width: 49%;
+    display: inline-block;
+    /* float: left; */
+    margin-left: 1%;
+}
+
+label{
+    color: #fff;
+    display: block;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.5cm;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: 2px solid #777;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.elem-group.inlined input{
+    width: 95%;
+    display: inline-block;
+}
+
+textarea{
+    height: 200px;
+}
+
+.book{
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: #5F5DE4;
+    border: none;
+    font-size: 0.5cm;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book:hover{
+    border: 2px solid black;
+}
+
+.close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    background-color: #5F5DE4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.hideform{
+    display: none;
+}
+
+
+/* yash */
+.cantainer{
+    width: 100%vh;
+   }
+    
+#first{
+    height: auto;
+    width: 1000px;
+    border: 4px solid rgb(196, 196, 247);
+    background: rgb(196, 196, 247);
+}
+#middle{
+    width: 1000px;
+    height: auto;
+    border: 4px solid rgb(196, 196, 247);
+    background: rgb(196, 196, 247);
+}
+#third{
+    width: 1000px;
+    height: auto;
+    border: 4px solid rgb(196, 196, 247);
+    background: rgb(196, 196, 247);
+}
+.align{
+    text-align: center;
+    padding: 2px 3px;
+}
+.box{
+
+    margin: 4px auto;
+    border-radius: 18px;
+    
+
+}
+.font{
+    font-size: 25px;
+}
+.abou{
+    margin-top: 0px;
+    padding-top: 0px;;
+}
+#about{
+ height: 450px;
+ width: 100%;
+ content: "About Us";
+}
+#About{
+    position: relative;
+    top: 100px;
+    left: 550px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/* Anusha */
+#sendResumeBtn {
+    margin-top: 10%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#applyButton {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    color: white;
+    transform: translate(-80%, -30%);
+    background-color: #4949c3;
+}
+
+.content>div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.popup-overlay {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    /* overflow: auto; */
+    /* Enable scroll if needed */
+    /* background-color: rgb(0, 0, 0); */
+    /* Fallback color */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    /* Black w/ opacity */
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    /* This enables flexbox layout */
+    justify-content: space-between;
+    /* This spaces out the children: one at the start, one at the end */
+    align-items: center;
+    /* This centers the items vertically */
+    width: 100%;
+    /* Adjust the width as necessary */
+    padding: 0 10px;
+    /* Add some padding on both sides */
+}
+
+.heading {
+    color: #000;
+}
+
+#closeB {
+    background: none;
+    border: none;
+    color: black;
+}
+
+
+.popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.col {
+    flex: 1;
+    /* margin: 0 10px; */
+}
+
+.Forlable {
+    display: block;
+    color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: #fefefe;
+}
+
+#ForField {
+    width: 80%;
+    border-radius: 7px;
+    border-bottom: solid black;
+    border-right: solid black;
+}
+
+#Forbutton {
+    margin-top: 7%;
+    background-color: #888;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/* Adjust the width as necessary or make it responsive */
+@media screen and (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        margin: 0 0 10px 0;
+    }
+}
+
+.hideform {
+    display: none;
+}
+

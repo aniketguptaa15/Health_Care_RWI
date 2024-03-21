@@ -1,0 +1,186 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centered Rectangle Box</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+        <body>
+            <header>
+                <div class="top">
+                  <div id="su">Support@whc.com </div>
+                   <div id="ad">Address - Scheme no. - 111,Indore.</div> 
+                   <div id="ca">Call now:- 1800-700-662</div>
+               </div>
+                  <nav class="navbar">
+                      <div style="width: 30%;">
+                      <img style="width: 40vh" src="/images/Logo.png"; alt="logo";>
+                     </div>
+                     <div>
+                     <b><div style="float: right; margin: right 0;">
+                      <a href="index.html" class="nav-item">Home</a>
+                      <a href="#" class="nav-item">Facilities</a>
+                      <a href="about.html" class="nav-item">About</a>
+                      <a href="#" class="nav-item">Contact</a>
+                      <a href="career.html" class="nav-item">Career</a>
+                      </div></b>
+                      <br>
+                      <div class="search-box" >
+                      <input type="search" class="search" placeholder="Search 🔍">
+                      </div>
+                  </div>
+                  </nav>
+                 </header>
+
+                 <content class="content2">
+                    <img src="/images/bg3.jpg" alt="">
+                    <div class="row">
+                        <div class="b1">
+                            <h2 class="t3">Pathology</h2>
+                            <h3 class="t4">@799</h3>
+                            <input type="button" value="Book Now" class="button" onclick="openform()">
+                        </div>
+                        <div class="b1">
+                            <h2 class="t3">Cardiology</h2>
+                            <h3 class="t4">@1199</h3>
+                            <input type="button" value="Book Now" class="button" onclick="openform()">
+                        </div>
+                        <div class="b1">
+                            <h2 class="t3">Radiology</h2>
+                            <h3 class="t4">@999</h3>
+                            <input type="button" value="Book Now" class="button" onclick="openform()">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b1">
+                            <h2 class="t3">Dentistry</h2>
+                            <h3 class="t4">@799</h3>
+                            <input type="button" value="Book Now" class="button" onclick="openform()">
+                        </div>
+                        <div class="b1">
+                            <h2 class="t3">Allergy test</h2>
+                            <h3 class="t4">@599</h3>
+                            <input type="button" value="Book Now" class="button" onclick="openform()">
+                        </div>
+                        <div class="b1">
+                            <h2 class="t3"s>Blood Test</h2>
+                            <h3 class="t4">@999</h3>
+                            <input type="button" value="Book Now" class="button" onclick="openform()">
+                        </div>
+                    </div>
+                </content>
+                
+                <!--Slot Booking form-->
+                <div class="section hideform" id="booking">
+                    <div class="section-center">
+                        <div class="booking-form">
+                            <div class="form-header">
+                                <h1>Take Appointment</h1>
+                            </div>
+                            <!--form-->
+                            <form>
+                                <div class="elem-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="visitor_name" id="name" placeholder="John" pattern=[A-Z\sa-z]{3,20} required>
+                                </div>
+                                <div class="elem-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="visitor_email" id="email" placeholder="email" required>
+                                </div>
+                                <div class="elem-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" name="visitor_phone" id="phone" placeholder="123-456-7890"  required>
+                                </div>
+                                <div class="elem-group inlined">
+                                    <label for="date">Date</label>
+                                    <input type="date" name="date" id="appointment-date"   required>
+                                </div>
+                                <div class="elem-group">
+                                    <label for="disease-selection">Select Disease</label>
+                                    <select id="disease-selection" name="disease-select" required>
+                                        <option value="">Select Disease</option>
+                                        <option value="Pathology">Pathology</option>
+                                        <option value="Cardiology">Cardiology</option>
+                                        <option value="Radiology">Radiology</option>
+                                        <option value="Dentistry">Dentistry</option>
+                                        <option value="Allergy Test">Allergy Test</option>
+                                        <option value="Blood Test">Blood Test</option>
+                                    </select>
+                                </div>
+                                <button class="book" type="submit">Book Slot</button>
+                            </form>
+                            <!--form-->
+                            <button class="close" onclick="closeform()">X</button>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                
+                
+                
+                 
+                 <footer class="footer">
+                  <div class="bottom">
+                       <div class="logo">
+                          <a href="#">
+                              <img src="/images/fb.png" alt= "FB logo">
+                          </a> 
+                          <a href="#">
+                              <img src="images/insta.png" alt="insta logo">
+                          </a> 
+                          <a href="#">
+                              <img src="/images/linkdin.png" alt="linkdin logo">
+                          </a> 
+                          <a href="#">
+                              <img src="/images/youtube.png" alt="youtube logo">
+                          </a>
+                       </div> 
+                      </div>
+                       <hr  class="lin" style="width: 90% ; margin-top: 90px;">
+          
+          
+                       <div class="content">
+                      
+                          <div>
+                              <h3>About Wellness Health Care</h3>
+                              <p>Wellness Health Care is a cross-border care USA platform bridging the gap in speciality care by connecting patients around the world from their homes to the top hospitals and specialists in the USA.</p>
+                          </div>
+                          <div class="vertical-line" >
+                              <div style="display: inline-block; text-align: justify;">
+                              <h3>Contact Info</h3>
+                              <p>1800-700-662</p>
+                              <p>Address - Scheme no. - 111, Indore.</p> 
+                          </div></div>
+                          
+                          <div style="text-align: center;">
+                                   <div style="display: inline-block; text-align: justify;">  
+                                      <h3>Legal</h3>
+                                          <p>Privacy Policies</p>
+                                          <p>Terms & Conditions</p>
+                                          <p>License</p>
+                                          <p>Resources</p>
+                                      </div>       
+                          </div>
+                          
+                          
+                      </div>
+                      
+                      <hr  class="lin" style="width: 90% ;">
+                      <div style=" text-align: center;">
+                      <p>Branch Office:-1st Floor ,Office No.102, Swastik Urbane Building, Plot No. 8, PU 4, Scheme 54, in Front of CHAI KAAPI, Vijay Nagar, Indore</p>
+                       <p>©  2024 Wellness Health Care Indore. All Rights Reserved.</p>
+                      </div>
+              
+              </footer>
+        <script >/*opening and closing form*/
+    function openform(){
+        document.getElementById("booking").style.display = "block";
+    }
+    function closeform(){
+        document.getElementById("booking").style.display = "none";
+    }</script>
+</body>
+</html>
