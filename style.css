@@ -4,7 +4,8 @@ body{
     min-height: auto;
     display: flex;
     flex-direction: column;
-    background-color:#D7DCEE;}
+    background-color:#D7DCEE;
+   }
 
 .top{
     display: flex;
@@ -29,7 +30,7 @@ body{
     font-family:'Times New Roman', Times, serif;
     color:#5F5DE4;
     font-size: 32px;
-    padding: 5px 30px;
+    padding: 5px 20px;
     text-decoration:none;
 }
 
@@ -40,7 +41,7 @@ body{
 .search-box{
     margin-top: 20px;
     height: 40px;
-    width: px;
+    width: auto;
     background-color: #AFAEEE;
     display: flex;
     float: inline-end;
@@ -75,6 +76,7 @@ footer{
     float: right;
     display: flex;
     margin-top: 0%;
+
 }
 .logo img{
    
@@ -140,6 +142,6 @@ footer{
     text-decoration:none;
     margin-left: 20%;
     text-align: center;
-    border-radius: 30%;
+    border-radius: 10vh;
     padding: 10px;
 }
