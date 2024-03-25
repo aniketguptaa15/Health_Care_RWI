@@ -23,7 +23,7 @@
               <a href="index.html" class="nav-item">Home</a>
               <a href="facilities.html" class="nav-item">Facilities</a>
               <a href="about.html" class="nav-item">About</a>
-              <a href="#" class="nav-item">Contact</a>
+              <a href="contact.html" class="nav-item">Contact</a>
               <a href="#" class="nav-item">Career</a>
               </div></b>
               <br>
@@ -37,65 +37,72 @@
        <div>
         <img src="/images/banner-Careers.jpg" width="100%" height="25%">
     </div>
+    <div class="Working">
     <p><b style="color: #4949c3;"><center><u>Working With Us</u></center></b><br>Wellness Health Care is one of the largest integrated healthcare
          organizations in the world with owned and managed hospitals, diagnostic clinics, 
          dispensing pharmacies and consultancy services. In addition, the group’s service offerings include
           healthcare at the patient’s doorstep, clinical & diagnostic services, medical business process 
           outsourcing, third party administration services and heath insurance.
     </p>
+
+</div>
+<div>
     <p><b style="color: #4949c3;"><center><u>  Wellness  Healthcare Culture </u></center></b><br>We urge the public not to be misled by 
         such communication purportedly made by representatives of our Company demanding payment in lieu of 
         employment in the Company. The Company is not liable for any loss that may ensue from such unauthorized
          acts committed by third parties misrepresenting themselves to be agents/representatives of the Company.
     </p>
+</div>
 
-    <div class="popup-overlay hideform" id="pop1">
-        <form class="popup-content">
-            <div class="container">
-                <div class="header-container">
-                    <h1 class="heading">Apply Here</h1>
-                    <button type="button" id="closeB" onclick="closePopup()">X</button>
-                </div>                
-                <!-- Row 1: Name & Email -->
-                <div class="row">
-                    <div class="col">
-                        <label class="Forlable">Name</label>
-                        <input type="text" id="ForField" placeholder="Enter your name">
-                    </div>
-                    <div class="col">
-                        <label  class="Forlable">Email</label>
-                        <input type="email" id="ForField" placeholder="Enter your email">
-                    </div>
+
+<div class="popup-overlay hideform" id="pop1">
+    <form class="popup-content">
+        <div class="container">
+            <div class="header-container">
+                <h1 class="heading">Apply Here</h1>
+                <button type="button" id="closeB" onclick="closePopup()">X</button>
+            </div>                
+            <!-- Row 1: Name & Email -->
+            <div class="row">
+                <div class="col">
+                    <label class="Forlable">Name</label>
+                    <input type="text" id="ForField" placeholder="Enter your name">
                 </div>
-                <!-- Row 2: Number & Position -->
-                <div class="row">
-                    <div class="col">
-                        <label  class="Forlable">Number</label>
-                        <input type="text" id="ForField" placeholder="Enter your number">
-                    </div>
-                    <div class="col">
-                        <label  class="Forlable">Position</label>
-                        <select id="ForField">
-                          <option>Select One</option>
-                          <option>Technical</option>
-                        </select>
-                    </div>
+                <div class="col">
+                    <label  class="Forlable">Email</label>
+                    <input type="email" id="ForField" placeholder="Enter your email">
                 </div>
-                <!-- Row 3: Attach Resume & Buttons -->
-                <div class="row">
-                    <div class="col">
-                        <label  class="Forlable">Attach Resume</label>
-                        <input type="file" id="ForField">
-                        
-                    </div>
-                    <div class="col">
-                        <button type="submit" id="Forbutton" style="margin-right: 15%;">Submit</button>
-                        <button type="button" id="Forbutton" onclick="closePopup()">Back</button>
-                    </div>
+            </div>
+            <!-- Row 2: Number & Position -->
+            <div class="row">
+                <div class="col">
+                    <label  class="Forlable">Number</label>
+                    <input type="text" id="ForField" placeholder="Enter your number">
                 </div>
-            </div>      
-        </form>
-    </div>
+                <div class="col">
+                    <label  class="Forlable">Position</label>
+                    <select id="ForField">
+                      <option>Select One</option>
+                      <option>Technical</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Row 3: Attach Resume & Buttons -->
+            <div class="row">
+                <div class="col">
+                    <label  class="Forlable">Attach Resume</label>
+                    <input type="file" id="ForField">
+                    
+                </div>
+                <div class="col">
+                    <button type="submit" id="Forbutton" style="margin-right: 15%;">Submit</button>
+                    <button type="button" id="Forbutton" onclick="closePopup()">Back</button>
+                </div>
+            </div>
+        </div>      
+    </form>
+</div>
+
     <div class="container">
         <img src="/images/doctor.jpg" alt="Doctor Image" width="100%" height="500">
         <div>
@@ -156,13 +163,13 @@
             </div>
     
     </footer>
-<script>function openPopup() {
-    document.getElementById("pop1").style.display = 'block';
-}
-
-function closePopup() {
-    document.getElementById("pop1").style.display = 'none';
-}
-</script>
+    <script>function openPopup() {
+        document.getElementById("pop1").style.display = 'block';
+    }
+    
+    function closePopup() {
+        document.getElementById("pop1").style.display = 'none';
+    }
+    </script>
 </body>
 </html>

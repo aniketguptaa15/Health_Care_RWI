@@ -67,7 +67,7 @@ body{
     outline: none;
     font-size: 18px;
     margin-left: 3%;
-    width: 60%;
+    width: 65%;
 
 }
 footer{
@@ -184,13 +184,13 @@ footer{
 .b1{
     border-radius: 10px;
     border: 2px solid black;
-    height:100px;
-    width: 200px;
+    height: 150px;
+    width: 180px;
     text-align:center;
-    margin: 40px;
-    margin-left: 130px;
+    margin-bottom: 30;
+    margin-left: 100px;
     margin-right: 100px;
-    padding-bottom: 30px;
+   
 }
 
 .row {
@@ -342,18 +342,18 @@ textarea{
     
 #first{
     height: auto;
-    width: 1000px;
+    width: 66%;
     border: 4px solid rgb(196, 196, 247);
     background: rgb(196, 196, 247);
 }
 #middle{
-    width: 1000px;
+    width: 66%;
     height: auto;
     border: 4px solid rgb(196, 196, 247);
     background: rgb(196, 196, 247);
 }
 #third{
-    width: 1000px;
+    width: 66%;
     height: auto;
     border: 4px solid rgb(196, 196, 247);
     background: rgb(196, 196, 247);
@@ -364,7 +364,7 @@ textarea{
 }
 .box{
 
-    margin: 4px auto;
+    margin: 10px auto;
     border-radius: 18px;
     
 
@@ -372,23 +372,138 @@ textarea{
 .font{
     font-size: 25px;
 }
-.abou{
-    margin-top: 0px;
-    padding-top: 0px;;
-}
+
 #about{
  height: 450px;
  width: 100%;
  content: "About Us";
 }
 #About{
-    position: relative;
-    top: 100px;
-    left: 550px;
+    position: absolute;
+    top: 200px;
+    left: 40%;
     font-size: 50px;
     font-weight: bold;
     color: white;
 }
+
+
+ /* Aditi css */
+ #img{
+    width: 100%;
+}
+#heading{
+font-size: 40px;
+text-align: center;
+text-decoration:underline;
+}
+#us{
+color:  #5F5DE4;
+}
+#paragraph{
+color: #5F5DE4;
+font-size: 25px;
+text-align: center;
+}
+.contact-box{
+width: 70%;
+height: auto;
+border: 2px solid  black;
+border-radius: 8vh;
+background-color: #F0F3FF;
+margin: 10px auto;  
+}
+#contacts{
+font-size: 40px;
+padding: 15px 15%;   
+}
+.cell{
+width: 80px;
+height: auto;
+margin-right: 20px;
+}
+.details{
+margin-left: 13%;
+padding: 10px;
+font-size: 25px;
+}
+
+.enquiry-box{
+border: 2px solid black;
+width: 70%;
+height: auto;
+margin: 10px auto;
+border-radius: 8vh;
+background-color: #F0F3FF;
+
+}
+.form{
+max-width: 70%;
+height:fit-content;
+margin: 0 auto;
+color: black;
+}
+#enquiryy{
+margin: 14px auto;
+font-size: 25px;
+border: 2px solid black;
+text-align: center;
+width: 110px;
+border-radius: 8px;
+background-color:  #5F5DE4;
+color: white;
+
+}
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .enquiry-box input[type="text"],
+.enquiry-box input[type="email"],
+.enquiry-box input[type="tel"],
+.enquiry-box textarea,
+.enquiry-box label {
+color: black; /* Set text color to black */
+}
+.radios{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+
+}
+.radio-group {
+margin-bottom: 10px; /* Add some space between groups */
+}
+
+.radio-group input[type="radio"] {
+display: inline; /* Display radio buttons inline */
+width: 20px;
+height: 20px;
+}
+
+.radio-group label {
+display: inline; /* Display labels inline */
+margin-right: 20px; /* Add space between radio buttons and labels */
+}
+
+
 
 
 
@@ -401,6 +516,7 @@ textarea{
     position: relative;
     text-align: center;
     color: white;
+    width: 100%;
 }
 
 #applyButton {
@@ -477,6 +593,8 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+    
 .row {
     display: flex;
     justify-content: space-between;
