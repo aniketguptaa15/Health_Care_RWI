@@ -163,38 +163,37 @@ footer{
 
 /* shiv css */
 .content2{
-    flex-direction: column;
     align-items: center;
-    display: flex;
     justify-content: center;
     width: 100%;
-    height: 450px;
+    height: auto;
     border-radius: 2vh;
+    background-image:url('/images/bg3.jpg') ;
 }
     .content2 img {
-        height: 450px;
-        position: absolute;
+        height: auto;
+        position: relative;
         width: 100%;
         z-index: -1;
         opacity: 0.5;
     }
-/* .bg{
-    background-image: url('/images/bg.jpg');
-} */
+.adjust{
+    max-width: 80%;
+    margin-left: 10%;
+}
 .b1{
     border-radius: 10px;
     border: 2px solid black;
     height: 150px;
     width: 180px;
     text-align:center;
-    margin-bottom: 30;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 20px 85px 20px 50px;
    
 }
 
 .row {
     display: flex;
+
 }
 
 .t3{
@@ -222,7 +221,7 @@ footer{
 
 .section-center{
     position:absolute;
-    margin-top: -40%;
+    margin-top: -35%;
     left: 0;
     right: 0;
 }
@@ -233,7 +232,6 @@ footer{
     width: 100%;
     margin: auto;
     background-color: #4247b4;
-    opacity: 0.9;
     padding: 40px;
     overflow: hidden;
     background-size: cover;
@@ -303,7 +301,7 @@ textarea{
 }
 
 .book{
-    width: 100px;
+    width: 35%;
     height: 30px;
     color: #fff;
     background-color: #5F5DE4;
@@ -312,6 +310,8 @@ textarea{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 4px;
     cursor: pointer;
+    align-items: center;
+    display: flex;
 }
 
 .book:hover{
@@ -366,25 +366,30 @@ textarea{
 
     margin: 10px auto;
     border-radius: 18px;
-    
-
 }
 .font{
     font-size: 25px;
 }
 
-#about{
- height: 450px;
- width: 100%;
- content: "About Us";
+.image-container {
+    position: relative;
+    display: inline-block; 
 }
-#About{
+
+.about-text {
     position: absolute;
-    top: 200px;
-    left: 40%;
-    font-size: 50px;
-    font-weight: bold;
+    top: 10%;
+    left: 50%;
     color: white;
+    transform: translate(-50%, -50%);
+    padding: 10px; 
+    font-size: 50px;
+    font-weight: bold; 
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
 }
 
 
