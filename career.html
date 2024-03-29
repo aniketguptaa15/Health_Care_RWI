@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="top">
-          <div id="su">Support@whc.com </div>
-           <div id="ad">Address - Scheme no. - 111,Indore.</div> 
-           <div id="ca">Call now:- 1800-700-662</div>
-       </div>
-          <nav class="navbar">
-              <div style="width: 45%;">
-              <img style="width: 30vh" src="/images/Logo.png"; alt="logo";>
-             </div>
-             <div>
-             <b><div style="float: right; margin: right 0;">
-              <a href="index.html" class="nav-item">Home</a>
-              <a href="facilities.html" class="nav-item">Facilities</a>
-              <a href="about.html" class="nav-item">About</a>
-              <a href="contact.html" class="nav-item">Contact</a>
-              <a href="career.html" class="nav-item">Career</a>
-              </div></b>
-              <br>
-              <div class="search-box" >
-              <input type="search" class="search" placeholder="Search 🔍">
-              </div>
+            <div id="su">Support@whc.com</div>
+            <div id="ad">Address - Scheme no. - 111, Indore.</div> 
+            <div id="ca">Call now:- 1800-700-662</div>
+        </div>
+        <nav class="navbar">
+          <div style="display: flex;">
+            <div class="logo-app">
+                <img style="width: 30vh;" src="/images/Logo.png" alt="logo">
+            </div>
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
           </div>
-          </nav>
-         </header>
-         
+            <div class="menu-items">
+                  <a href="index.html" class="nav-item">Home</a>
+                  <a href="facilities.html" class="nav-item">Facilities</a>
+                  <a href="about.html" class="nav-item">About</a>
+                  <a href="contact.html" class="nav-item">Contact</a>
+                  <a href="career.html" class="nav-item">Career</a>
+            </div>   
+        </nav>
+          <div class="search-box">
+              <input type="search" class="search" placeholder="Search 🔍">
+            </div>
+    </header>     
        <div>
         <img src="/images/banner-Careers.jpg" width="100%" height="25%">
     </div>
     <div class="Working">
-    <p><b style="color: #4949c3;"><center><u>Working With Us</u></center></b><br>Wellness Health Care is one of the largest integrated healthcare
+    <p><b style="color: #4949c3; "><center><u>Working With Us</u></center></b><br>Wellness Health Care is one of the largest integrated healthcare
          organizations in the world with owned and managed hospitals, diagnostic clinics, 
          dispensing pharmacies and consultancy services. In addition, the group’s service offerings include
           healthcare at the patient’s doorstep, clinical & diagnostic services, medical business process 
@@ -143,14 +146,14 @@
                     <p>Address - Scheme no. - 111, Indore.</p> 
                 </div></div>
                 
-                <div style="text-align: center;">
-                         <div style="display: inline-block; text-align: justify;">  
-                            <h3>Legal</h3>
-                                <p>Privacy Policies</p>
-                                <p>Terms & Conditions</p>
-                                <p>License</p>
-                                <p>Resources</p>
-                            </div>       
+                <div class="legal">
+                    <div style="display: inline-block; text-align: justify;">  
+                        <h3>Legal</h3>
+                        <p>Privacy Policies</p>
+                        <p>Terms & Conditions</p>
+                        <p>License</p>
+                        <p>Resources</p>
+                    </div>       
                 </div>
                 
                 
@@ -170,6 +173,11 @@
     function closePopup() {
         document.getElementById("pop1").style.display = 'none';
     }
+    </script>
+     <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+        document.querySelector('.menu-items').classList.toggle('active');
+        });
     </script>
 </body>
 </html>

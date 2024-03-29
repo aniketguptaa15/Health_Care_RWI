@@ -1,161 +1,301 @@
-body{
+body {
     margin: 0;
     padding: 0;
     min-height: auto;
     display: flex;
     flex-direction: column;
-    background-color:#D7DCEE;
-   }
+    background-color: #D7DCEE;
+}
 
-.top{
+.top {
     display: flex;
     width: 100%;
     height: auto;
     background-color: blue;
     justify-content: space-between;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     margin-top: 0;
 }
-#su{
-    margin-left: 10%;
 
+#su {
+    margin: 0 2% 0 2%;
 }
-#ad{
-    margin-left: 10%;
-    margin-right: 10%;
+
+#ca {
+    margin: 0 2% 0 2%;
 }
-#ca{
-    margin-right: 10%;
-}
+
 .navbar {
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    overflow: hidden;
-
+    justify-content:space-between;
+    width: 100%;
 }
 
 .nav-item {
-    font-family:'Times New Roman', Times, serif;
-    color:#5F5DE4;
-    font-size: 32px;
-    padding: 5px 20px;
-    text-decoration:none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #5F5DE4;
+    font-size: 26px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 .nav-item:hover {
     background-color: gray;
     text-decoration: none;
 }
-.search-box{
-    margin-top: 20px;
+
+.menu-icon {
+    display: none; /* Hide the menu icon by default */
+}
+.search-box {
     height: 40px;
-    width: 25%;
+    width: 12%;
     background-color: #AFAEEE;
     display: flex;
     float: inline-end;
-    margin-right: 20px;
     border-radius: 10vh;
     justify-content: center;
-    align-items: center;   
-}
-.search{
-    background-color:transparent;
-    border: transparent;
-    outline: none;
-    font-size: 18px;
-    margin-left: 3%;
-    width: 65%;
+    align-items: center;
+    margin: 0% 5% 1% 0% ;
 
 }
-footer{
+
+.search {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    font-size: 1.12rem;
+    width: 70%;
+}
+
+footer {
     bottom: 0;
     width: 100%;
     height: auto;
     background-color: #11133F;
     position: relative;
-    border-top-left-radius: 2vh;    
-    border-top-right-radius: 2vh; 
-    color: white;   
-
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    color: white;
 }
 
-.logo{
-    margin-right:50px;
+.logo {
+    margin-right: 5%;
     float: right;
     display: flex;
     margin-top: 0%;
-
 }
-.logo img{
-   
-    padding: 20px 30px;
+
+.logo img {
+    padding: 20px 20px;
     margin-top: 0%;
 }
+
 .content {
     display: flex;
-    margin: 20px 60px; 
+    margin: 20px 60px;
+}
+
+.lin {
+    position: relative;
+    border-color: white;
+    margin: bottom 20px;
+}
+
+.bottom {
+    margin-top: 0%;
 }
 
 .vertical-line {
-    
     border-left: 2px solid white;
     border-right: 2px solid white;
-    height: 200px;
-    width: 60px;
+    height: auto;
+    width: auto;
     text-align: center;
+}
+.legal{
+   text-align: center;
 }
 
 .content > div {
     flex: 1;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
+
 .carousel-inner img {
     width: 100%;
     height: 518px;
-  }
-  .lin{
-    position: relative;
-    border-color: white;
-    margin: bottom 20px; ;
-  }
-  .bottom{
-    margin-top: 0%;
-  }
-  .fixed-box {
+}
+.fixed-box {
     position: relative;
     width: 25%; /* Adjust the width as needed */
     padding: 10px;
-    z-index: 1000; /* Ensure the box stays above other content */
-    transform: translateY(-20%); 
     color: black;
     background-color: #C9D5FF;
     border-radius: 10%;
-
-
 }
-#fixed-box{
+
+#fixed-box {
+    display: flex;
     width: 80%;
     display: flex;
     margin-left: 10%;
     justify-content: space-between;
 }
-.appoinment{
+
+.appointment {
     color: white;
 }
-.take{
-    background-color:#5F5DE4;
+
+.take {
+    background-color: #5F5DE4;
     width: 60%;
     align-items: center;
     color: white;
-    text-decoration:none;
+    text-decoration: none;
     margin-left: 20%;
     text-align: center;
     border-radius: 10vh;
     padding: 10px;
 }
+@media (max-width: 650px) {
+    body {
+        min-height: auto;
+    }
+
+    .top {
+        font-size: 12px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .nav-item {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .search-box {
+        margin: 0% 10% 2% 0% ;
+        height: 30px;
+        width: 30%;
+    }
+
+    .search {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .logo-app{
+        margin: 0% 10% 10% 0%;
+        margin-left: -9%;
+ 
+    }
+    .logo-app-img{
+        width: 10vh;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 30px; 
+        padding-top: 10%;
+        
+        
+    }
+    .navbar .menu-items {
+        display: none;
+    }
+
+    .menu-items.active {
+        display: block;
+    }
+    .nav-item{
+        display: flex;
+        margin: -10% 90% 0% 90% ;
+    }
+}
+@media (max-width: 600px) {
+
+    .fixed-box {
+        position: relative;
+        width: 70%; 
+        padding: 10px;
+        color: black;
+        background-color: #C9D5FF;
+        border-radius: 10%;
+        margin: 5% 15% 5% 15% ;
+        
+    }
+   
+    #fixed-box {
+        display:contents;
+        width: 80%;
+       
+    }
+    .appointment {
+        color: white;
+    }
+    
+    .take {
+        background-color: #5F5DE4;
+        width: 60%;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        margin-left: 20%;
+        text-align: center;
+        border-radius: 10vh;
+        padding: 10px;
+    }
+    }
+    @media (max-width: 600px){
+        .content{
+            display: contents;
+
+        }
+        .vertical-line{
+            display: inline;
+            border: none;
+        }
+        .legal{
+            text-align:left;
+        }
+       
+    }
+    @media (max-width: 375px) {
+        .logo {
+            margin-right: 0%;
+            float: right;
+            display: flex;
+            margin-top: 0%;
+        }
+        
+        .logo img {
+            padding: 15px 15px;
+            margin-top: 0%;
+        }
+
+
+    }
+
+
+
+  
 
 
 
@@ -213,7 +353,7 @@ footer{
 }
 
 
-/*booking form*/
+/* /booking form/ */
 
 .section{
     position: relative;
@@ -335,6 +475,62 @@ textarea{
 }
 
 
+/* /--tab--/ */
+@media (max-width: 768px){
+    .adjust{
+        width: 100%;
+    }
+
+    .content2{
+       display: block;
+    }
+
+    .content2 img{
+        width: 100%;
+        height: auto;
+    }
+    .row{
+        display: block;
+    }
+
+    .b1{
+       width: 100%;
+     }
+
+/* /---form-tab--/ */
+
+.section-center{
+    position:absolute;
+}
+    .booking-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .elem-group {
+        margin: 10px 0;
+    }
+
+    .elem-group.inlined {
+        width: 100%;
+        display: block; 
+        margin-left: 0;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+
+    .book {
+        width: 100%; 
+    }
+
+
+}
+
+/*-------------------------*/
+
+
 /* yash */
 .cantainer{
     width: 100%vh;
@@ -383,7 +579,7 @@ textarea{
     color: white;
     transform: translate(-50%, -50%);
     padding: 10px; 
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold; 
 }
 
@@ -419,7 +615,8 @@ background-color: #F0F3FF;
 margin: 10px auto;  
 }
 #contacts{
-font-size: 40px;
+    font-weight: bold;
+font-size: 27px;
 padding: 15px 15%;   
 }
 .cell{
@@ -428,9 +625,9 @@ height: auto;
 margin-right: 20px;
 }
 .details{
-margin-left: 13%;
+margin-left: 6%;
 padding: 10px;
-font-size: 25px;
+font-size: 24px;
 }
 
 .enquiry-box{
@@ -446,6 +643,7 @@ background-color: #F0F3FF;
 max-width: 70%;
 height:fit-content;
 margin: 0 auto;
+margin: 12%;
 color: black;
 }
 #enquiryy{
@@ -508,12 +706,19 @@ cursor: pointer;
 display: inline; /* Display labels inline */
 margin-right: 20px; /* Add space between radio buttons and labels */
 }
+@media (max-width: 600px) {
+    .details{
+        font-size: 18px;
+    }
+}
+
 
 
 
 
 
 /* Anusha */
+
 #sendResumeBtn {
     margin-top: 10%;
 }
@@ -522,7 +727,6 @@ margin-right: 20px; /* Add space between radio buttons and labels */
     position: relative;
     text-align: center;
     color: white;
-    width: 100%;
 }
 
 #applyButton {
@@ -531,7 +735,7 @@ margin-right: 20px; /* Add space between radio buttons and labels */
     left: 50%;
     color: white;
     transform: translate(-80%, -30%);
-    background-color: #4949c3;
+    background-color: #1515ba;
 }
 
 .content>div {
@@ -543,23 +747,18 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.para {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
 .popup-overlay {
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
-    /* overflow: auto; */
-    /* Enable scroll if needed */
-    /* background-color: rgb(0, 0, 0); */
-    /* Fallback color */
-    /* background-color: rgba(0, 0, 0, 0.4); */
-    /* Black w/ opacity */
     display: flex;
     margin-top: 10%;
     justify-content: center;
@@ -568,15 +767,10 @@ body {
 
 .header-container {
     display: flex;
-    /* This enables flexbox layout */
     justify-content: space-between;
-    /* This spaces out the children: one at the start, one at the end */
     align-items: center;
-    /* This centers the items vertically */
     width: 100%;
-    /* Adjust the width as necessary */
     padding: 0 10px;
-    /* Add some padding on both sides */
 }
 
 .heading {
@@ -599,8 +793,6 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-    
 .row {
     display: flex;
     justify-content: space-between;
@@ -615,6 +807,8 @@ body {
 .Forlable {
     display: block;
     color: #000;
+    float: left;
+    margin-left: 5%;
 }
 
 input[type="text"],
@@ -649,22 +843,30 @@ button {
     background-color: black;
 }
 
-/* Adjust the width as necessary or make it responsive */
-@media screen and (max-width: 600px) {
-    .popup-content {
-        width: 90%;
-    }
-
-    .row {
-        flex-direction: column;
-    }
-
-    .col {
-        margin: 0 0 10px 0;
-    }
-}
-
 .hideform {
     display: none;
 }
 
+/* For tablets */
+@media only screen and (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    #applyButton {
+        top: 70%;
+        transform: translate(-50%, -30%);
+    }
+
+    .popup-content {
+        width: 80%;
+    }
+}
+
+/* For phones */
+@media only screen and (max-width: 480px) {
+    .popup-content {
+        width: 90%;
+    }
+}
